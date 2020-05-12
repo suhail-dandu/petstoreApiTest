@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Petstore Rest API Test" parallel="methods">
+  <listeners>
+    <listener class-name="supportFiles.TestListener"/>
+  </listeners>
+  <test name="Petstore">
+    <groups>
+      <run>
+        <include name="testPetstoreFindByID"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testFiles.PetstoreAPITest"/>
+    </classes>
+  </test> <!-- Petstore -->
+</suite> <!-- Petstore Rest API Test -->
